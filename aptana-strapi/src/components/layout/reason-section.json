@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_reason_sections",
+  "info": {
+    "displayName": "Reason Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "reason": {
+      "displayName": "reason card",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.reason-card"
+    }
+  }
+}

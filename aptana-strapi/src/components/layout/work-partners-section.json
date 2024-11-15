@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_work_partners_sections",
+  "info": {
+    "displayName": "Partners Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

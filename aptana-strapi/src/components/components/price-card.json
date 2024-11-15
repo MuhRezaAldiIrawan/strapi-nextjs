@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_price_cards",
+  "info": {
+    "displayName": "Price Card"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa fa-user",
+        "fas fa-bullhorn",
+        "fas fa-coins"
+      ]
+    }
+  }
+}

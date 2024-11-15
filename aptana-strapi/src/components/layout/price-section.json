@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_layout_price_sections",
+  "info": {
+    "displayName": "Price Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "displayName": "Price Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.price-card"
+    },
+    "percentage": {
+      "displayName": "percentage",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.percentage"
+    }
+  }
+}

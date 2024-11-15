@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_image_partners_sections",
+  "info": {
+    "displayName": "ImagePartners Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "imagePartners": {
+      "displayName": "imagePartners",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.image-partners"
+    }
+  }
+}

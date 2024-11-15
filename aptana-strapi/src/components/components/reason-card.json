@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_reason_cards",
+  "info": {
+    "displayName": "reason card"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

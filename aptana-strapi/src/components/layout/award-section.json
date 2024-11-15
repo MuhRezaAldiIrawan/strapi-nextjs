@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_award_sections",
+  "info": {
+    "displayName": "Award Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "awards": {
+      "displayName": "Awards Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.awards-card"
+    }
+  }
+}

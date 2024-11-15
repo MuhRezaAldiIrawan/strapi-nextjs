@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_awards_cards",
+  "info": {
+    "displayName": "Awards Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "awards_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

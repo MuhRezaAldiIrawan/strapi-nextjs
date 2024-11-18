@@ -1,54 +1,24 @@
-import styles from '@/app/page.module.css'
+// "use client"
 import qs from "qs";
-import { HomePage } from './ui/page/home-page';
+import Header from '@/app/ui/_partials/header';
+import GoogleTagManager from "./ui/_partials/googletagmanager";
+import Navigation from "./ui/_partials/navbar";
+import HomePage  from "./ui/pages/home-page";
 
-const homeQuery = qs.stringify({
-  populate: {
-    blocks: {
-      on: {
-        "layout.hero-section": {
-          populate: {
-            image: {
-              fields: ["url", "alternativeText"]
-            },
-            link: {
-              populate: true
-            }
-          }
-        }
-      }
-    }
-  },
-});
 
-async function getStrapiData(path: string) {
-  const baseUrl = "http://localhost:1337";
-  const url = new URL(path, baseUrl);
-  url.search = homeQuery;
 
-  console.log(url);
-  
-
-  try {
-    const response = await fetch(url.href);
-    const data = await response.json();
-    // console.log(data);
-    console.log(JSON.stringify(data, null, 2));
-
-    return data;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-export default async function Home() {
-  const strapiData = await getStrapiData("/api/home-page");
-
-  const { title, description } = strapiData.data;
-
+export default function Home() {
   return (
-    <main className="container mx-auto py-6">
-      <HomePage data={strapiData} />
+    <main>
+      <Header />
+      <GoogleTagManager />
+      <div className="site-wrapper overflow-hidden">
+        <Navigation />
+        <div className="main-content">
+          {/* <h1>test</h1> */}
+          <HomePage />
+        </div>
+      </div>
     </main>
   );
 }
